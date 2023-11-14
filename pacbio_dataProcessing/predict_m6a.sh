@@ -5,9 +5,6 @@
 #SBATCH -n 1
 #SBATCH -t 0-12:00
 #SBATCH --mem 3G
-#SBATCH --mail-type=fail
-#SBATCH --mail-user=richard_isaac@hms.harvard.edu
-#SBATCH --export=all
 
 if [ $# -ne 1 ]; then
 	echo "Please provide bam file as an input argument."
