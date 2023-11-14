@@ -5,9 +5,6 @@
 #SBATCH -n 1   
 #SBATCH -t 0-00:30
 #SBATCH --mem=3G
-#SBATCH --mail-type=fail
-#SBATCH --mail-user=richard_isaac@hms.harvard.edu
-#SBATCH --export=all
 #SBATCH --requeue
 
 # Get the input file name from the command line argument
@@ -18,4 +15,4 @@ fi
 INPUT_FILE=$1
 
 # Run the R script
-Rscript /n/groups/churchman/rsi4/mtfiberseq/fibertools/scripts/positionCorrect_lrpcr.R $INPUT_FILE
+Rscript positionCorrect_lrpcr.R $INPUT_FILE
