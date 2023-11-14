@@ -15,7 +15,7 @@ fi
 
 module load gcc/6.2.0
 module load conda2/4.2.13
-source activate /home/rsi4/.conda/envs/churchman_smrtlink
+source activate /home/rsi4/.conda/envs/churchman_smrtlink #Change to your conda environment
 
 input_bam="$1"
 output_bam="${1%.bam}_m6a.bam"
