@@ -15,4 +15,4 @@ fi
 INPUT_FILE=$1
 
 # Run the R script
-Rscript /n/groups/churchman/rsi4/mtfiberseq/fibertools/scripts/positionCorrect_BamHI.R $INPUT_FILE
+Rscript positionCorrect_BamHI.R $INPUT_FILE
