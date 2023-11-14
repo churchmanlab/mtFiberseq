@@ -6,9 +6,6 @@
 #SBATCH --ntasks-per-node=20
 #SBATCH -t 0-00:10
 #SBATCH --mem=5M
-#SBATCH --mail-type=fail
-#SBATCH --mail-user=richard_isaac@hms.harvard.edu
-#SBATCH --export=all
 #SBATCH --requeue
 
 # Check that all input arguments are present
