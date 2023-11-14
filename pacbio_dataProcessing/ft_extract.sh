@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#SBATCH -J fte_0U
+#SBATCH -p short
+#SBATCH -n 1   
+#SBATCH --ntasks-per-node=20
+#SBATCH -t 0-01:00
+#SBATCH --mem=2G
+#SBATCH --requeue
+
 module load gcc/6.2.0
 module load conda2/4.2.13
 source activate /home/rsi4/.conda/envs/churchman_smrtlink #Change to conda environment
