@@ -1,14 +1,5 @@
 #!/bin/bash
 
-#SBATCH -J ccs_batch
-#SBATCH -p short
-#SBATCH -n 1
-#SBATCH -t 0-03:00
-#SBATCH --mem 50M
-#SBATCH --mail-type=fail
-#SBATCH --mail-user=richard_isaac@hms.harvard.edu
-#SBATCH --export=all
-
 # Check if the data_dir and num_of_chunks arguments are provided
 if [ "$#" -ne 2 ]; then
 	echo "Error: script requires both the path to data as well as the number of chunks"
