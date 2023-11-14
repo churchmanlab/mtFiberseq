@@ -6,9 +6,6 @@
 #SBATCH --ntasks-per-node=20
 #SBATCH -t 0-05:00
 #SBATCH --mem=15G
-#SBATCH --mail-type=fail
-#SBATCH --mail-user=richard_isaac@hms.harvard.edu
-#SBATCH --export=all
 #SBATCH --requeue
 
 if [ $# -ne 2 ]; then
