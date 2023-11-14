@@ -17,15 +17,15 @@ fi
 
 module load gcc/6.2.0
 module load conda2/4.2.13
-source activate /home/rsi4/.conda/envs/churchman_smrtlink
+source activate /home/rsi4/.conda/envs/churchman_smrtlink #Change to your conda environment
 
 ref_genome=""
 if [ "$1" == "bamhi" ]; then
-  ref_genome="/n/groups/churchman/rsi4/mtfiberseq/reference_genome/hg38_chrM_BamHI.fa"
+  ref_genome="hg38_chrM_BamHI.fa"
 elif [ "$1" == "eagi" ]; then
-  ref_genome="/n/groups/churchman/rsi4/mtfiberseq/reference_genome/hg38_chrM_EagI.fa"
+  ref_genome="hg38_chrM_EagI.fa"
 elif [ "$1" == "lrpcr" ]; then
-  ref_genome="/n/groups/churchman/rsi4/mtfiberseq/reference_genome/hg38_chrM_lrpcr.fa"
+  ref_genome="hg38_chrM_lrpcr.fa"
 else
   echo "Invalid reference genome. Please choose bamhi/eagi/lrpcr."
   exit 1
