@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#SBATCH -J ccs_sub
+#SBATCH -p short
+#SBATCH -n 1   
+#SBATCH --ntasks-per-node=20
+#SBATCH -t 0-05:00
+#SBATCH --mem=4G
+#SBATCH --requeue
+
 # load required modules
 module load gcc/6.2.0
 module load conda2/4.2.13
