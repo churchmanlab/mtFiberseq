@@ -22,7 +22,7 @@ out_dir="${data_dir}/out"
 mkdir ${out_dir}
 
 # specify the path to the ccs_sub.sh script
-ccs_sub_script="/n/groups/churchman/rsi4/mtfiberseq/fibertools/scripts/ccs_sub.sh"
+ccs_sub_script="ccs_sub.sh"
 
 # loop over the subdirectories and submit ccs_sub.sh for each subread bam chunk
 for num in $(seq -w 00 $((${num_of_chunks}-1))) ; do
