@@ -5,9 +5,6 @@
 #SBATCH -n 1   
 #SBATCH -t 0-00:30
 #SBATCH --mem 20M
-#SBATCH --mail-type=fail
-#SBATCH --mail-user=richard_isaac@hms.harvard.edu
-#SBATCH --export=all
 
 # check if input bam file is provided
 if [ $# -lt 2 ]; then
