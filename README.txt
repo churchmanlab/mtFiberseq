@@ -1,9 +1,4 @@
-# README detailing code available relevant to
-# Isaac et al., 2023 NSMB resubmission
-# Written by R. Stefan Isaac
-
-This folder contains multiple subfolders containing scripts used in 
-Isaac et al., 2022 BioRxiv for data alignment and processing. 
+This repository contains the scripts necessary to analyze mtFiber-seq data, as performed in the manuscript "Single-nucleoid architecture reveals heterogeneous packaging of mitochondrial DNA".
 
 Contents:
 
