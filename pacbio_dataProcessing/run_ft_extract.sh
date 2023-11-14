@@ -28,5 +28,5 @@ bed_suffix=".bed"
 
 for ((min_ml_score=$min_ml_score_start; min_ml_score<=$min_ml_score_end; min_ml_score++ )); do
 	bed_file=$bed_prefix$min_ml_score$bed_suffix
-	sbatch /n/groups/churchman/rsi4/mtfiberseq/fibertools/scripts/ft_extract.sh $min_ml_score $bed_file "$bam_file"
+	sbatch ft_extract.sh $min_ml_score $bed_file "$bam_file"
 done
