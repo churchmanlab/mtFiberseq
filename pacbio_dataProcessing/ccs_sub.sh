@@ -3,7 +3,7 @@
 # load required modules
 module load gcc/6.2.0
 module load conda2/4.2.13
-source activate /home/rsi4/.conda/envs/churchman_smrtlink
+source activate /home/rsi4/.conda/envs/churchman_smrtlink #Change this to your conda environment
 
 # check if input arguments are provided
 if [ "$#" -ne 2 ]; then
